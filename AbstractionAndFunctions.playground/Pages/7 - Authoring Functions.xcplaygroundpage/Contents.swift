@@ -27,6 +27,18 @@ import Foundation
  */
 // Begin your work here...
 
+/// Area of cylinder
+/// - Parameter r: radio of cylinder
+/// - Parameter h: height of cylinder
+func areaOfCylinder(radius r: Double, height h: Double) -> Double {
+    let baseArea = Double.pi * pow(r, 2.0)
+    let lateralArea = 2 * Double.pi * r * h
+    return 2 * baseArea + lateralArea
+}
+// Invoke the function to find the area of a cylinder that has a radius of 20 and a height of 35
+let result = areaOfCylinder(radius: 20, height: 35)
+//Report Results
+print ("The area of that cylinder is \(result)")
 
 
 /*:
