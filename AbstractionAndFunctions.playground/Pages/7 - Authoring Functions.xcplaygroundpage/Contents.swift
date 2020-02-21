@@ -40,18 +40,30 @@ let result = areaOfCylinder(radius: 20, height: 35)
 //Report Results
 print ("The area of that cylinder is \(result)")
 
-// Parallelogram
-// Find the perimeter of a Parallelogram
+
+// Find the perimeter of a Parallelogram and rectangle
+/// Parallelogram
+/// - Parameter b: one side
+/// - Parameter c: another side
 func perimeterParallelogram (side b: Double, anotherSide c: Double) -> Double {
 return 2 * (b + c)
 }
 
-// Invoke the function and find the perimeter of a parallelogram
+// Invoke the function and find the perimeter of a parallelogram or a rectangle
 perimeterParallelogram(side: 10, anotherSide: 8 )
 perimeterParallelogram(side: 7, anotherSide: 9 )
 perimeterParallelogram(side: 11, anotherSide: 16 )
 
+// Find the area of a triangle
+/// Area of triangle
+/// - Parameter b: base of the triangle
+/// - Parameter h: height of the triangle
+func areaOfTriangle (base b: Double, height h: Double) -> Double {
+return b * h / 2
+}
 
-/*:
- [Previous: Writing Documentation](@previous) | Page 7
- */
+// Invoke the function to find the area of a tringle
+areaOfTriangle(base: 13, height: 11)
+areaOfTriangle(base: 17, height: 16)
+areaOfTriangle(base: 12, height: 15)
+
