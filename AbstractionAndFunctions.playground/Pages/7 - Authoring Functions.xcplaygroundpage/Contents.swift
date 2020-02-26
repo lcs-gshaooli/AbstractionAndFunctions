@@ -68,8 +68,6 @@ areaOfTriangle(base: 17, height: 16)
 areaOfTriangle(base: 12, height: 15)
 
 
-
-
 /// Find the area of a sphere
 /// - Parameter radius: radius os a sphare
 func areaOfSphere(radius: Double) -> Double {
@@ -80,3 +78,12 @@ func areaOfSphere(radius: Double) -> Double {
 let surfaceAreaOfSphere = areaOfSphere(radius: 2)
 
 
+/// Find the perimeter of a parallelogram
+/// - Parameter base: base of parallelogram
+/// - Parameter lenght: lenght of parallelogram
+func parallelogram(base: Double, lenght: Double ) -> Double {
+    return 4 * (base * lenght)
+}
+ // Invoke the function to find the perimeter of a parallelogram
+
+let perimeterParallelogram = parallelogram(base: 4, lenght: 3)
