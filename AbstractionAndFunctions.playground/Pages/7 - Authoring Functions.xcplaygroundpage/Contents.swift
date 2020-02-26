@@ -67,3 +67,16 @@ areaOfTriangle(base: 13, height: 11)
 areaOfTriangle(base: 17, height: 16)
 areaOfTriangle(base: 12, height: 15)
 
+
+
+
+/// Find the area of a sphere
+/// - Parameter radius: radius os a sphare
+func areaOfSphere(radius: Double) -> Double {
+    return 4 * Double.pi * pow(radius, 2.0 )
+}
+// Invoke the function to find the area of a sphere
+
+let surfaceAreaOfSphere = areaOfSphere(radius: 2)
+
+
