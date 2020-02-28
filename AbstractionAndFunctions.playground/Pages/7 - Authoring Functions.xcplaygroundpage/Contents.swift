@@ -37,6 +37,19 @@ func areaOfCylinder(radius r: Double, height h: Double) -> Double {
 }
 // Invoke the function to find the area of a cylinder that has a radius of 20 and a height of 35
 let result = areaOfCylinder(radius: 20, height: 35)
+
+// test case #1 Cylinder: 9, height: 40
+areaOfCylinder(radius: 9, height: 40)
+
+// test case #2 Cylinder: 17, height: 51
+areaOfCylinder(radius: 17, height: 51)
+
+// test case #3 Cylinder: 17, height: 51
+areaOfCylinder(radius: 15, height: 28)
+
+// test case #4 Cylinder: 6, height: 64
+areaOfCylinder(radius: 6, height: 64)
+
 //Report Results
 print ("The area of that cylinder is \(result)")
 
@@ -75,7 +88,22 @@ func areaOfSphere(radius: Double) -> Double {
 }
 // Invoke the function to find the area of a sphere
 
-let surfaceAreaOfSphere = areaOfSphere(radius: 2)
+let result  = areaOfSphere(radius: 2)
+
+
+// test case #1 sphere: 9, height: 40
+areaOfSphere(radius: 9)
+
+// test case #2 sphere: 17, height: 51
+areaOfSphere(radius: 17)
+
+// test case #3 sphere: 17, height: 51
+areaOfSphere(radius: 15)
+
+// test case #4 sphere: 6, height: 64
+areaOfSphere(radius: 6)
+
+
 
 
 /// Find the perimeter of a parallelogram
@@ -85,5 +113,20 @@ func parallelogram(base: Double, lenght: Double ) -> Double {
     return 4 * (base * lenght)
 }
  // Invoke the function to find the perimeter of a parallelogram
+let result  = parallelogram(base: 4, lenght: 3)
 
-let perimeterParallelogram = parallelogram(base: 4, lenght: 3)
+// test case #1 parallelogram: base: 8, lenght: 5
+parallelogram(base: 8, lenght: 5)
+
+// test case #2 parallelogram: base: 5, lenght: 19
+parallelogram(base: 5, lenght: 19)
+
+// test case #3 parallelogram: base: 11, lenght: 4
+parallelogram(base: 11, lenght: 4)
+
+// test case #3 parallelogram: base: 9, lenght: 13
+parallelogram(base: 9, lenght: 13)
+
+//Report Results
+print ("The perimeter of that parallelogram is \(result)")
+
