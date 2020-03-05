@@ -19,9 +19,12 @@
 /// - Returns: area of the rectangle
 func areaOfRectangle(length: Double, width: Double) -> Double {
     // Ensure that wehave resonable values
-    guard lenght > 0, width, > 0 else {
-        
+    guard length > 0, width > 0 else {
+        // We have one or more inputs, so return a nil value
+        return nil
     }
+    
+    // We have a reasonable values, so return the area
     return length * width
     
 }
@@ -36,13 +39,13 @@ func areaOfRectangle(length: Double, width: Double) -> Double {
 let result = areaOfRectangle(length: 10, width: 5)
 
 // Test case #1 lenght: 10.5, width: 10, result: 105
-let result = areaOfRectangle(length: 10.5, width: 10)
+areaOfRectangle(length: 10.5, width: 10)
 
 // Test case #3: lenght -5, width: 25, result: nil
-let result = areaOfRectangle(length: -5, width: 25)
+areaOfRectangle(length: -5, width: 25)
 
 // Test case #4: lenght 5, width: -25, result: nil
-let result = areaOfRectangle(length: 5, width: -25)
+areaOfRectangle(length: 5, width: -25)
 
 // Report the results
 print("The area of that rectangle was \(result) square units.")

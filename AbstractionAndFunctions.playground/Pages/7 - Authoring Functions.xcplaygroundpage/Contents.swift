@@ -50,16 +50,17 @@ areaOfCylinder(radius: 15, height: 28)
 // test case #4 Cylinder: 6, height: 64
 areaOfCylinder(radius: 6, height: 64)
 
-//Report Results
-print ("The area of that cylinder is \(result)")
 
 
 // Find the perimeter of a Parallelogram and rectangle
 /// Parallelogram
 /// - Parameter b: one side
 /// - Parameter c: another side
-func perimeterParallelogram (side b: Double, anotherSide c: Double) -> Double {
-return 2 * (b + c)
+func perimeterParallelogram (side: Double, anotherSide: Double) -> Double {
+    guard side > 0, anotherSide > 0 else {
+    return nil
+    }
+return 2*(side + anotherSide)
 }
 
 // Invoke the function and find the perimeter of a parallelogram or a rectangle
@@ -71,8 +72,12 @@ perimeterParallelogram(side: 11, anotherSide: 16 )
 /// Area of triangle
 /// - Parameter b: base of the triangle
 /// - Parameter h: height of the triangle
-func areaOfTriangle (base b: Double, height h: Double) -> Double {
-return b * h / 2
+func areaOfTriangle (base1: Double, base2: Double) -> Double {
+    guard base > 0, height > 0 else {
+       return nil
+    }
+    
+return bas1e * base2 / 2
 }
 
 // Invoke the function to find the area of a tringle
@@ -81,14 +86,19 @@ areaOfTriangle(base: 17, height: 16)
 areaOfTriangle(base: 12, height: 15)
 
 
+
+
 /// Find the area of a sphere
 /// - Parameter radius: radius os a sphare
 func areaOfSphere(radius: Double) -> Double {
+    guard radius > 0 else {
+         return nil
+    }
     return 4 * Double.pi * pow(radius, 2.0 )
 }
 // Invoke the function to find the area of a sphere
 
-let result  = areaOfSphere(radius: 2)
+let result = areaOfSphere(radius: 2)
 
 
 // test case #1 sphere: 9, height: 40
@@ -106,14 +116,19 @@ areaOfSphere(radius: 6)
 
 
 
+
 /// Find the perimeter of a parallelogram
 /// - Parameter base: base of parallelogram
 /// - Parameter lenght: lenght of parallelogram
 func parallelogram(base: Double, lenght: Double ) -> Double {
+    guard base > 0, lenght > 0 else {
+          return nil
+       }
+    
     return 4 * (base * lenght)
 }
  // Invoke the function to find the perimeter of a parallelogram
-let result  = parallelogram(base: 4, lenght: 3)
+let result = parallelogram(base: 4, lenght: 3)
 
 // test case #1 parallelogram: base: 8, lenght: 5
 parallelogram(base: 8, lenght: 5)
@@ -127,6 +142,4 @@ parallelogram(base: 11, lenght: 4)
 // test case #3 parallelogram: base: 9, lenght: 13
 parallelogram(base: 9, lenght: 13)
 
-//Report Results
-print ("The perimeter of that parallelogram is \(result)")
 
